@@ -1,0 +1,201 @@
+
+/* ページ全体 */
+body {
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, "Noto Sans JP", sans-serif;
+    color: #000;
+}
+
+/* ヘッダー */
+header {
+    max-width: 1000px;
+    margin: 20px auto 16px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20%;
+}
+
+/* MyProfileのタイトル */
+nav h1 {
+    font-size: 32px;
+    margin: 0;
+    padding: 12px 28px;
+    border: 1px solid #000;
+}
+
+/* ナビゲーションメニュー */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* メインコンテンツ */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+article {
+    padding: 16px;
+}
+
+/* メインビジュアル */
+.main-visual {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.main-visual img {
+    display: block;
+    width: 100%;
+    height: 385px;
+    object-fit: cover;
+}
+
+/* About・Works共通 */
+section {
+    margin-bottom: 12px;
+    padding: 16px 20px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin: 16px 0 28px;
+}
+
+/* プロフィール */
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 16px;
+}
+
+.profile > img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-text h3 {
+    font-size: 24px;
+    margin: 0 0 12px;
+}
+
+.profile-text ul {
+    margin: 0;
+    padding-left: 26px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Worksの写真一覧 */
+.works-list {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.works-item {
+    width: 180px;
+    text-align: center;
+}
+
+.works-item img {
+    width: 100%;
+    height: 135px;
+    object-fit: cover;
+}
+
+.works-item p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 24px;
+}
+
+/* フッター */
+footer {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/* スマートフォン対応 */
+@media (max-width: 600px) {
+    nav {
+        padding: 10px;
+        gap: 12px;
+    }
+
+    nav h1 {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    nav ul {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
+    article {
+        padding: 8px;
+    }
+
+    .main-visual img {
+        height: 220px;
+    }
+
+    section h2 {
+        font-size: 28px;
+    }
+
+    .profile {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .profile-text h3 {
+        font-size: 20px;
+    }
+
+    .works-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .works-item {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .works-item img {
+        height: auto;
+    }
+}
